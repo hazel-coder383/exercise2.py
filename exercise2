@@ -1,0 +1,9 @@
+file = open("message_list.txt", "r")
+contents = file.read()
+file.close()
+
+items = contents.split("\n")
+items.sort()
+
+for item in items:
+    print(" - " + item)
